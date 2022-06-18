@@ -1,0 +1,27 @@
+<!DOCTYPE> 
+<html>
+<head>
+<body>
+  <b>Input integer:</b> 
+  <input type="text" id="n">
+  <input type="submit" onclick="reverseInt()" value="submit">
+  <p id="End Result"></p>
+  <script type="text/javascript">
+  
+  	function reverseInt(){
+    var user=document.getElementById("n").value;
+    var prev=document.getElementById("End Result");
+    var i,res=0;
+    while(user !=0){
+    	res=(res*10)+(user%10);
+      user=parseInt(user/10);
+    
+    }
+    prev.innerHTML="The reversed integer is = " +res;
+    return false;
+    }
+  </script><br>
+<a href="home">Return Home</a>
+</body>
+</head>
+</html>

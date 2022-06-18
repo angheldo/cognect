@@ -1,0 +1,30 @@
+<!DOCTYPE> 
+<html> 
+<head>
+<body>
+  <b>Input any string:</b> 
+  <input type="text" id="angel">
+  <input type="submit" onclick="palindrome()" value="submit">
+  <script type="text/javascript">
+  
+  function palindrome()
+  {
+    var ald=document.getElementById("angel").value;
+    var ram="";
+    for(i=ald.length-1; i>=0; i--){
+    ram+=ald[i];
+    }
+    if(ald==ram){
+    alert("It is a Palindrome String.");
+    	console.log("It is a Palindrome String.");
+    }
+    else{
+    alert("It is not a Palindrome String.");
+    console.log("It is not a Palindrome String.");
+    }
+  }
+  </script><br>  
+<a href="home">Return Home</a>
+</body>
+</head>
+</html>

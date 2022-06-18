@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+   <html>
+	<head>
+	<meta charset="utf-8">
+	<title>Colspan and Rowspan</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<style>
+		 html {
+ 			font-family: Cursive;
+ 			}
+		body { 
+    			background-color: cyan;
+			}
+		table { border: 3; 
+			border-collapse: collapse; 
+			margin-right: auto; 
+			margin-left: auto; 
+			}
+		th { 
+			border: 2;
+    			background-color: dimgray;
+			}
+		td { 
+			border: 2;
+    			background-color: lightgray;
+			}
+		tr, td, th, table {
+          		border: 1px solid black;
+          		text-align: center;
+			}
+		h1 {
+			padding: 50px;
+			text-align:center;
+			}
+	</style>
+	</head>
+	<body>
+ 	   <div>
+	   <div class="jumbotron" style="background-image: url('https://mdbcdn.b-cdn.net/img/new/fluid/nature/011.webp');">
+	   <h1 align="left" style="color: green;">Colspan and Rowspan</h1>
+	   <table class="table" style="width: 400px; height: 550px;>
+	   <tr>
+	   <th colspan=2 style="color: yellowgreen;">Animals</th>
+	   </tr>
+	   <tr>
+	   <th colspan=2 style="color: yellow;">Hippopotamus</th>
+	   </tr>
+	   <tr>
+	   <th rowspan=2 style="color: orange;">Horse</th>
+	   <td>Mare</td>
+	   </tr>
+	   <tr>
+	   <td>Stallion</td>
+	   </tr>
+	   <tr>
+	   <th colspan=2 style="color: pink;">Crocodile</th>
+	   </tr>
+	   <tr>
+	   <th rowspan=2 style="color: red;">Chicken</th>
+	   <td>Hen</td>
+	   </tr>
+	   <tr>
+	   <td>Rooster</td>
+	   </tr>
+	   </table>
+        </div>
+	<!--JS files: jQuery first, then Popper.js, then Bootstrap JS -->	
+	</div><br>
+	<a href="home">Return Home</a>
+	</body>
+   </html>

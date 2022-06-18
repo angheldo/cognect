@@ -1,0 +1,27 @@
+<!DOCTYPE> 
+<html>
+<head>
+<body>
+  <b>Input any word:</b> 
+  <input type="text" id="l">
+  <input type="submit" onclick="alph_order()" value="submit">
+<p id="ald"></p>
+  <script type="text/javascript">
+  
+  function alph_order()
+  {
+    var string=document.getElementById("l").value;
+    var pre=document.getElementById("ald");
+    var stringArray = string.split('').sort().join('');
+   
+    
+    console.log(string);
+    console.log(stringArray);
+pre.innerHTML="Alphabetical Order: "+ stringArray;
+return false;
+	}
+  </script><br>  
+<a href="home">Return Home</a>
+</body>
+</head>
+</html>
